@@ -1,0 +1,21 @@
+body{
+    background-image: url("../assets/woods.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.appbar{
+    position:fixed
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+}
+
+.caco{
+    display: flex;
+    padding: 10px;
+    list-style: none;
+    flex-direction: row;
+}
