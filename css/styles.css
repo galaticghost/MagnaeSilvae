@@ -1,21 +1,44 @@
-body{
-    background-image: url("../assets/woods.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
 .appbar{
-    position:fixed
+    position: sticky;
+    border-bottom: 1px solid grey;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-.navigation{
-    display: flex;
-    flex-direction: row;
+.titulo{
+    justify-content: space-around;
+}
+
+.tituloh1{
+    display: inline;
+    font-family: "Old Standard TT", serif;
 }
 
 .caco{
     display: flex;
-    padding: 10px;
     list-style: none;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center ;
+    padding: 0px;
+}
+
+.item{
+    padding: 13px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.item:hover{
+    background-color: aquamarine;
+    border-radius: 8px;
+}
+
+
+
+@media (min-width: 640px){
+    .appbar{
+        flex-direction: row;
+    }
 }
