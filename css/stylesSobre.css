@@ -1,6 +1,6 @@
 .appbar{
     position: sticky;
-    border-bottom: 2px solid #2E2C2F;
+    border-bottom: 2px solid grey;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -68,52 +68,19 @@ body{
     color: black;
 }
 
-.fae{
-    margin-top: 1em; 
-    display: flex;
-    flex-direction: row;
-    border: 3px groove #2E2C2F;
-    border-radius: 8px;
-    background-color: #F3E8EE ;
-    width: 60%;
-    margin-left: 10px;
-}
-
-.fae-image{
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    width: 560px;
-    height: 800px;  
-}
-
-.content{
-    padding: 1.2em;
-    width: 100%;
-    height: 100%;
-
-}
 .footer{
-    position: relative;
+    position: absolute;
     bottom: 0;
     width: auto;
     height: auto;
     background-color: #F3E8EE;
-    border-top: 2px solid #2E2C2F;
+    border-top: 1px solid gray;
     padding: 8px;
-}
-
-.c{
-    margin-bottom: 10px;
 }
 
 @media (max-width: 780px){
     .appbar{
         flex-direction: column;
-        align-items: center;
-
-    }
-
-    .titulo{
         padding-top: 15px;
     }
     body{
@@ -123,14 +90,11 @@ body{
     .fae-image{
         width: auto;
         height: auto;
-        border-bottom-left-radius: 0px;
-        border-top-right-radius: 5px;
     }
     .fae{
         flex-direction: column;
         width: auto;
         height: auto;
-        margin: 14px;
     }
     .content{
         width: auto;
