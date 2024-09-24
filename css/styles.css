@@ -110,15 +110,19 @@ body{
     .appbar{
         flex-direction: column;
         align-items: center;
-
     }
 
     .titulo{
-        padding-top: 15px;
+        padding: 10px;
     }
     body{
         background-color: #F3E8EE;
         background-image: url("../assets/nature.jpg");
+    }
+    .nav-top-list{
+        position: fixed;
+        bottom:0;
+        background-color: #F3E8EE;
     }
     .fae-image{
         width: auto;
@@ -151,5 +155,9 @@ body{
 @media (min-width: 780px) {
     .fae{
         min-width: 752px;
+    }
+
+    .bottombar{
+        display: none;
     }
 }

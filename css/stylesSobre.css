@@ -71,7 +71,8 @@ body{
 .footer{
     position: absolute;
     bottom: 0;
-    width: auto;
+    width: 100%;
+    box-sizing: border-box;
     height: auto;
     background-color: #F3E8EE;
     border-top: 1px solid gray;
