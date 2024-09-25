@@ -1,18 +1,28 @@
+:root{
+    --cor-um: #F3E8EE;
+    --cor-dois: #2E2C2F;
+    --cor-tres: #BACDB0;
+    --cor-quatro: #475B63;
+    --cor-cinco: black;
+    --cor-seis: whitesmoke;
+}
+
+
 .appbar{
     position: sticky;
-    border-bottom: 2px solid #2E2C2F;
+    border-bottom: 2px solid var(--cor-dois);
     display: flex;
     align-items: center;
     flex-direction: row;
     padding-left: 1em;
     margin-bottom: 1em;
-    background-color: #F3E8EE;
+    background-color: var(--cor-um);
     top: 0;
     width: auto;
 }
 
 body{
-    background-color: #BACDB0;
+    background-color: var(--cor-tres);
     position: relative;
     min-height: 100vh;
     margin: 0;
@@ -50,31 +60,31 @@ body{
 }
 
 .item:hover{
-    background-color: #475B63;
-    color: whitesmoke;
+    background-color: var(--cor-quatro);
+    color: var(--cor-seis);
     border-radius: 8px;
     cursor: pointer;
 }
 
 #item-active{
-    background-color: #475B63;
-    color: whitesmoke;
+    background-color: var(--cor-quatro);
+    color: var(--cor-seis);
     border-radius: 8px;
     cursor: default;
 }
 
 .navlink{
     text-decoration: none;
-    color: black;
+    color: var(--cor-cinco);
 }
 
 .fae{
     margin-top: 1em; 
     display: flex;
     flex-direction: row;
-    border: 3px groove #2E2C2F;
+    border: 3px groove var(--cor-dois);
     border-radius: 8px;
-    background-color: #F3E8EE ;
+    background-color: var(--cor-um) ;
     width: 60%;
     margin-left: 10px;
 }
@@ -97,8 +107,8 @@ body{
     bottom: 0;
     width: auto;
     height: auto;
-    background-color: #F3E8EE;
-    border-top: 2px solid #2E2C2F;
+    background-color: var(--cor-um);
+    border-top: 2px solid var(--cor-dois);
     padding: 8px;
 }
 
@@ -106,23 +116,55 @@ body{
     margin-bottom: 10px;
 }
 
+.bottom-bar{
+    position: fixed;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: var(--cor-um);
+    margin: 0;
+    width: 100%;
+    align-content: center;
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-bottom: 20px;
+    bottom: 0;
+    border-top: 2px solid var(--cor-quatro) ;
+}
+
+.bottom-bar button{
+    color: inherit;
+    box-sizing: border-box;
+    text-align: inherit;
+    border: inherit;
+    background-color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    background-color: var(--cor-quatro);
+    color: var(--cor-seis);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+
 @media (max-width: 780px){
     .appbar{
         flex-direction: column;
         align-items: center;
+        padding-left: 0;
     }
 
     .titulo{
         padding: 10px;
     }
     body{
-        background-color: #F3E8EE;
+        background-color: var(--cor-um);
         background-image: url("../assets/nature.jpg");
     }
     .nav-top-list{
-        position: fixed;
-        bottom:0;
-        background-color: #F3E8EE;
+        display: none;
     }
     .fae-image{
         width: auto;
@@ -141,14 +183,14 @@ body{
         height: auto;
     }
     .item{
-        background-color: #475B63;
-        color: whitesmoke;
+        background-color: var(--cor-quatro);
+        color: var(--cor-seis);
         border-radius: 8px;
         cursor: pointer;
     }
     #item-active{
         background-color: inherit;
-        color: black;
+        color: var(--cor-cinco);
     }
 }
 
@@ -157,7 +199,7 @@ body{
         min-width: 752px;
     }
 
-    .bottombar{
+    .bottom-bar{
         display: none;
     }
 }
