@@ -20,8 +20,23 @@
     width: auto;
 }
 
+.svg-dark{
+    filter: invert(100%);
+}
+
+.sun-size{
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+
+.sun-top{
+
+
+}
 body{
-    background-color: var(--cor-tres);
+    background-color: var(--cor-um);
+    background-image: url("../assets/nature.jpg");
     position: relative;
     min-height: 100vh;
     margin: 0;
@@ -35,6 +50,7 @@ body{
 .tituloh1{
     display: inline;
     font-family: "Old Standard TT", serif;
+    color: var(--cor-cinco);
 }
 
 .nav-top-list{
@@ -96,12 +112,14 @@ body{
 }
 
 .content{
+    color: var(--cor-cinco);
     padding: 1.2em;
     width: 100%;
     height: 100%;
 
 }
 .footer{
+    color: var(--cor-cinco);
     position: relative;
     bottom: 0;
     width: auto;
@@ -113,6 +131,10 @@ body{
 
 .c{
     margin-bottom: 10px;
+}
+
+.bodyd{
+    background-image: url("../assets/stsci-01f7yc0hwkkc07zrhn0sf06veq.png");
 }
 
 .bottom-bar{
@@ -158,10 +180,7 @@ body{
     .titulo{
         padding: 10px;
     }
-    body{
-        background-color: var(--cor-um);
-        background-image: url("../assets/nature.jpg");
-    }
+
     .nav-top-list{
         display: none;
     }
@@ -194,8 +213,21 @@ body{
 }
 
 @media (min-width: 780px) {
+    body{
+        background-color: var(--cor-tres);
+        background-image: none;
+    }
+    
+    .bodyd{
+        background-image: none;
+    }
+
     .fae{
         min-width: 752px;
+    }
+
+    .sun-top{
+        display: none;
     }
 
     .bottom-bar{
