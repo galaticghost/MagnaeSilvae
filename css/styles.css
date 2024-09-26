@@ -7,7 +7,6 @@
     --cor-seis: whitesmoke;
 }
 
-
 .appbar{
     position: sticky;
     border-bottom: 2px solid var(--cor-dois);
