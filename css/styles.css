@@ -159,6 +159,7 @@ body{
     padding-bottom: 20px;
     bottom: 0;
     border-top: 2px solid var(--cor-quatro) ;
+    z-index: 2;
 }
 
 .bottom-bar button{
@@ -173,6 +174,13 @@ body{
     color: var(--cor-seis);
     border-radius: 8px;
     padding: 10px;
+}
+
+.encherlinguica{
+    position: relative;
+    bottom: 0;
+    padding: 22px;
+    background-color: var(--cor-um);
 }
 
 
@@ -241,6 +249,9 @@ body{
     }
 
     .bottom-bar{
+        display: none;
+    }
+    .encherlinguica{
         display: none;
     }
 }

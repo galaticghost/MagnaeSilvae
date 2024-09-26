@@ -101,7 +101,7 @@ body{
 
 .footer{
     color: var(--cor-cinco);
-    position: relative;
+    position: absolute;
     bottom: 0;
     width: auto;
     height: auto;
@@ -202,7 +202,7 @@ body{
     .bodyd{
         background-image: none;
     }
-    
+
     .sun-top{
         display: none;
     }
