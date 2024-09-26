@@ -18,6 +18,7 @@
     background-color: var(--cor-um);
     top: 0;
     width: auto;
+    overflow: hidden;
 }
 
 .svg-dark{
@@ -28,12 +29,15 @@
     width: 50px;
     height: 50px;
     border: none;
+    cursor: pointer;
 }
 
-.sun-top{
-
-
+.sun-middle{
+    position: absolute;
+    right: 0;
+    padding-right: 40px;
 }
+
 body{
     background-color: var(--cor-um);
     background-image: url("../assets/nature.jpg");
@@ -43,7 +47,9 @@ body{
 }
 
 .titulo{
-    justify-content: space-around;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-right: 1em;
 }
 
@@ -172,13 +178,17 @@ body{
 
 @media (max-width: 780px){
     .appbar{
-        flex-direction: column;
-        align-items: center;
-        padding-left: 0;
+        display: block;
+        padding: 20px;
+    }
+
+    .sun-top{
+        float: right;
     }
 
     .titulo{
         padding: 10px;
+        display: inline;
     }
 
     .nav-top-list{
@@ -234,3 +244,26 @@ body{
         display: none;
     }
 }
+
+@media (prefers-color-scheme: light) {
+    :root{
+        --cor-um: #F3E8EE;
+        --cor-dois: #2E2C2F;
+        --cor-tres: #BACDB0;
+        --cor-quatro: #475B63;
+        --cor-cinco: black;
+        --cor-seis: whitesmoke;
+    }
+  }
+
+@media (prefers-color-scheme: dark) {
+    :root{
+        --cor-um: #2E2C2F;
+        --cor-dois: white;
+        --cor-tres: #475B63;
+        --cor-quatro: #ecf8f8;
+        --cor-cinco: white;
+        --cor-seis: black;
+    }
+    
+  }

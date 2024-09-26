@@ -10,28 +10,42 @@
     <link rel="icon" href="../assets/logo.ico" type="image/icon type">
     <title>Sobre</title>
 </head>
-<body>
+<body id="body">
+    
     <header class="appbar">
         <div class="titulo">
-            <img src="../assets/logo.svg" width="32px" height="32px" alt="Símbolo da Terra">
-            <h1 class="tituloh1">Magnae Silvae</h1>
+                <img src="../assets/logo.svg" width="32px" height="32px" alt="Símbolo da Terra" id="svg">
+                <h1 class="tituloh1">Magnae Silvae</h1>
         </div>
+        <img type="image" src="../assets/moon.png" onclick="trocaCorHtml()" class="sun-size sun-top" id="suntop">
         <nav>
-            <div class="navigation">
-                <ul class="nav-top-list">
-                    <a href="../index.html" class="navlink"><li><button class="item">Início</button></li></a>
-                    <a class="navlink"><li class="item" id="item-active">Vírus</li></a>
-                </ul>
-            </div>
+            <ul class="nav-top-list">
+                <a href="../index.html" class="navlink"><li><button class="item">Início</button></li></a>
+                <a class="navlink"><li class="item" id="item-active">Sobre</li></a>
+                <li><img type="image" src="../assets/moon.png" onclick="trocaCorHtml()" class="sun-size sun-middle" id="sunmiddle"></li>
+            </ul>
         </nav>
     </header>
 
     <section>
-        <p>Essoai cabo</p>
+        <article>
+            <p> AAAAAAA</p>
+        </article>
     </section>
 
     <footer class="footer">
-        <p>Magnae Silvae @2002-2012. Ao usar esse site você aceita os <a href="termos.html">termos de uso</a></p>
+        <p>Magnae Silvae @2002-2012. Ao usar esse site você aceita os <a href="html/termos.html">termos de uso</a></p>
     </footer>
+
+    <nav>
+       <ul class="bottom-bar">
+        <a href="../index.html" class="navlink"><li><button>Início</button></li></a>
+        <li><button>Sobre</button></li>
+    </ul> 
+    </nav>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>
+
+
