@@ -217,6 +217,7 @@ body{
     }
 
     .sobre{
+        box-sizing: border-box;
         width: auto;
         height: auto;
         margin: 14px;
