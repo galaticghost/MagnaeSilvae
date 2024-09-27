@@ -99,9 +99,51 @@ body{
     color: var(--cor-cinco);
 }
 
+.sobre{
+    width: auto;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin-bottom: 2.5em;
+}
+
+.sobre img{
+    border: 3px groove var(--cor-dois);
+    border-bottom: none;
+    width: 1024px;
+    height: 768px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.content{
+    background-color: var(--cor-um);
+    color: var(--cor-dois);
+    border: 3px groove var(--cor-dois);
+    border-top: none;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    font-family: "Amiri", serif;
+    width: 1024px;
+    text-align: center;
+    text-shadow: 2px 2px var(--cor-seis);
+}
+
+.caras{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.link{
+    color: blue;
+    text-shadow: none;
+}
+
 .footer{
     color: var(--cor-cinco);
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: auto;
     height: auto;
@@ -112,6 +154,14 @@ body{
 
 .bodyd{
     background-image: url("../assets/stsci-01f7yc0hwkkc07zrhn0sf06veq.png");
+}
+
+.encherlinguica{
+    position: relative;
+    bottom: 0;
+    padding: 22px;
+    background-color: var(--cor-um);
+    color: var(--cor-um);
 }
 
 .bottom-bar{
@@ -165,22 +215,13 @@ body{
     .nav-top-list{
         display: none;
     }
-    .fae-image{
-        width: auto;
-        height: auto;
-        border-bottom-left-radius: 0px;
-        border-top-right-radius: 5px;
-    }
-    .fae{
-        flex-direction: column;
+
+    .sobre{
         width: auto;
         height: auto;
         margin: 14px;
     }
-    .content{
-        width: auto;
-        height: auto;
-    }
+
     .item{
         background-color: var(--cor-quatro);
         color: var(--cor-seis);
@@ -210,6 +251,9 @@ body{
     .bottom-bar{
         display: none;
     }
+    .encherlinguica{
+        display: none;
+    }
 }
 
 @media (prefers-color-scheme: light) {
@@ -231,6 +275,9 @@ body{
         --cor-quatro: #ecf8f8;
         --cor-cinco: white;
         --cor-seis: black;
+    }
+    .link{
+        color: white;
     }
     
   }

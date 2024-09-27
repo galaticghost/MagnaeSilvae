@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="icon" href="../assets/logo.ico" type="image/icon type">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <title>Sobre</title>
 </head>
 <body id="body">
@@ -17,28 +20,39 @@
                 <img src="../assets/logo.svg" width="32px" height="32px" alt="Símbolo da Terra" id="svg">
                 <h1 class="tituloh1">Magnae Silvae</h1>
         </div>
-        <img type="image" src="../assets/moon.png" onclick="trocaCorHtml()" class="sun-size sun-top" id="suntop">
+        <img type="image" src="../assets/moon.png" onclick="trocaCor()" class="sun-size sun-top" id="suntop">
         <nav>
             <ul class="nav-top-list">
                 <a href="../index.html" class="navlink"><li><button class="item">Início</button></li></a>
                 <a class="navlink"><li class="item" id="item-active">Sobre</li></a>
-                <li><img type="image" src="../assets/moon.png" onclick="trocaCorHtml()" class="sun-size sun-middle" id="sunmiddle"></li>
+                <li><img type="image" src="../assets/moon.png" onclick="trocaCor()" class="sun-size sun-middle" id="sunmiddle"></li>
             </ul>
         </nav>
     </header>
 
-    <section>
-        <article>
-            <p> AAAAAAA</p>
+    <section class="sobre">
+        <img src="../assets/woods.jpg" alt="Um bosque" id="woods">
+        <article class="content">
+            <h2>Créditos</h2>
+            <p class="caras">Malucos do Stack Overflow e (meio que) eu</p>
+            <p>Javascriptsssssssss</p>
+            <p class="caras">Zero noção quem fez</p>
+            <p>Artes e fotos</p>
+            <p class="caras">Tio da infomática</p>
+            <p>Conteúdo de Html e Css</p>
+            <p class="caras">Eu</p>
+            <p>Transformando água em urina</p>
+            <p class="caras">Repositório</p>
+            <a href="https://github.com/galaticghost/MagnaeSilvae" class="link" id="link"><p>https://github.com/galaticghost/MagnaeSilvae</p></a>
         </article>
     </section>
 
     <footer class="footer">
-        <p>Magnae Silvae @2002-2012. Ao usar esse site você aceita os <a href="html/termos.html">termos de uso</a></p>
+        <p>Magnae Silvae @2002-2012. Ao usar esse site você aceita os <a href="html/termos.html" class="link" id="flink">termos de uso</a></p>
     </footer>
 
     <div class="encherlinguica">
-
+        China
     </div>
 
     <nav>
@@ -48,7 +62,7 @@
     </ul> 
     </nav>
 
-    <script src="../js/script.js"></script>
+    <script src="../js/scriptHtml.js"></script>
 </body>
 </html>
 
