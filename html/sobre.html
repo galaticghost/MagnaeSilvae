@@ -26,6 +26,7 @@
                 <a href="../index.html" class="navlink"><li><button class="item">Início</button></li></a>
                 <a class="navlink"><li class="item" id="item-active">Sobre</li></a>
                 <li><img type="image" src="../assets/moon.png" onclick="trocaCor()" class="sun-size sun-middle" id="sunmiddle"></li>
+                <button onclick="showDrawer()"><img src="../assets/Hamburger_icon.svg"/></button>
             </ul>
         </nav>
     </header>
@@ -61,6 +62,11 @@
         <li><button>Sobre</button></li>
     </ul> 
     </nav>
+
+    <div id="drawer">
+
+    </div>
+   <div id="overlay" onclick="hideDrawer()"></div>
 
     <script src="../js/scriptHtml.js"></script>
 </body>

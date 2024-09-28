@@ -55,3 +55,11 @@ function trocaCor(){
         x = true;
     }
 }
+
+function showDrawer() {
+    document.getElementById('body').classList.add('show-drawer');
+  }
+  
+  function hideDrawer() {
+    document.getElementById('body').classList.remove('show-drawer');
+  }
