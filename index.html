@@ -23,7 +23,7 @@
                 <a class="navlink"><li class="item" id="item-active">Início</li></a>
                 <a href="html/sobre.html" class="navlink"><li><button class="item">Sobre</button></li></a>
                 <li><img type="image" src="assets/moon.png" onclick="trocaCor()" class="sun-size sun-middle" id="sunmiddle"/></li>
-                <button onclick="showDrawer()"><img src="assets/Hamburger_icon.svg"/></button>
+                <button onclick="showDrawer()" class="ham-top"><img src="assets/Hamburger_icon.svg"/></button>
             </ul>
         </nav>
 
@@ -84,7 +84,7 @@
        <ul class="bottom-bar">
         <li><button>Início</button></li>
         <a href="html/sobre.html" class="navlink"><li><button>Sobre</button></li></a>
-        <button onclick="showDrawer()"><img src="assets/Hamburger_icon.svg"/></button>
+        <img src="assets/Hamburger_icon.svg" onclick="showDrawer()" />
     </ul> 
     </nav>
 
@@ -93,7 +93,7 @@
     </div>
 
     <div id="drawer">
-
+        <p>Bolaman</p>
       </div>
     <div id="overlay" onclick="hideDrawer()"></div>
 

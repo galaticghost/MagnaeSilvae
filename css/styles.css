@@ -42,7 +42,7 @@
 .sun-middle{
     position: absolute;
     right: 0;
-    padding-right: 40px;
+    padding-right: 100px;
 }
 
 body{
@@ -191,6 +191,12 @@ body{
     color: var(--cor-um);
 }
 
+.ham-top{
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+}
+
 @media (max-width: 780px){
     .appbar{
         display: block;
@@ -243,7 +249,6 @@ body{
 
     #drawer {
         max-width: 30vw;
-        width: auto;
       }
 }
 
@@ -302,26 +307,26 @@ body{
   }
   
 #drawer {
+    position: fixed;
     background: white;
     height: 100vh;
     padding: 48px;
-    position: fixed;
-    right: 0;
     text-align: center;
+    right: 0;
     top: 0;
     transform: translateX(100%);
     width: 320px;
     z-index: 3;
-  }
+}
 
   
 #overlay {
+    position: fixed;
     background: black;
+    opacity: 0;
     bottom: 0;
     height: 100vh;
     left: 0;
-    opacity: 0;
-    position: fixed;
     right: 0;
     top: 0;
     visibility: hidden;
@@ -336,7 +341,7 @@ body{
     }
     
     #overlay {
-      opacity: 0.5;
-      visibility: visible;
+        opacity: 0.5;
+        visibility: visible;
     }
 }

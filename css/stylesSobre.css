@@ -42,7 +42,7 @@
 .sun-middle{
     position: absolute;
     right: 0;
-    padding-right: 40px;
+    padding-right: 100px;
 }
 
 body{
@@ -107,7 +107,6 @@ body{
 }
 
 .sobre{
-    width: auto;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -204,32 +203,38 @@ body{
 }
 
 #drawer {
+    position: fixed;
     background: white;
     height: 100vh;
     padding: 48px;
-    position: fixed;
-    right: 0;
     text-align: center;
+    right: 0;
     top: 0;
     transform: translateX(100%);
     width: 320px;
     z-index: 3;
-  }
+}
 
   
 #overlay {
+    position: fixed;
     background: black;
     bottom: 0;
     height: 100vh;
     left: 0;
     opacity: 0;
-    position: fixed;
     right: 0;
     top: 0;
     visibility: hidden;
     width: 100vw;
     z-index: 2;
-  }
+}
+
+.ham-top{
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+}
   
 #body.show-drawer {
     
@@ -238,8 +243,28 @@ body{
     }
     
     #overlay {
-      opacity: 0.5;
-      visibility: visible;
+        opacity: 0.5;
+        visibility: visible;
+    }
+}
+
+@media (min-width: 781px) and (max-width: 1130px){
+    .sobre{
+        box-sizing: border-box; 
+        width: 90vw;
+        height: auto;
+        margin-left: 40px;
+    }
+
+    .sobre img{
+        box-sizing: border-box; 
+        width: 90vw;
+        height: auto;
+    }
+
+    .content{
+        box-sizing: border-box; 
+        width: 90vw;
     }
 }
 
@@ -264,10 +289,23 @@ body{
     }
 
     .sobre{
-        box-sizing: border-box;
-        width: auto;
+        box-sizing: border-box; 
+        width: 90vw;
         height: auto;
         margin: 14px;
+    }
+
+    .sobre img{
+        box-sizing: border-box; 
+        width: 90vw;
+        height: auto;
+    }
+
+    .content{
+        box-sizing: border-box; 
+        width: 90vw;
+        height: auto;
+        padding: 10px;
     }
 
     .item{
@@ -283,7 +321,6 @@ body{
 
     #drawer {
         max-width: 30vw;
-        width: auto;
       }
 
 }
