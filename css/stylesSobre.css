@@ -170,8 +170,12 @@ body{
     color: var(--cor-um);
 }
 
+.bottom{
+    position: sticky;
+    bottom: 0;
+}
+
 .bottom-bar{
-    position: fixed;
     display: flex;
     list-style: none;
     flex-direction: row;
@@ -184,7 +188,6 @@ body{
     padding-top: 20px;
     padding-left: 0px;
     padding-bottom: 20px;
-    bottom: 0;
     border-top: 2px solid var(--cor-quatro) ;
 }
 
