@@ -1,5 +1,6 @@
 # Magnae Silvae
-> (INSIRA TEXTO AQUI)
+https://magnaesilvae.netlify.app
+> (INSIRA CITAÇÃO DO JL)
 # GuieqKlarrind 2 (Não exatamente)
 Website feito para o segundo entregável de front-end na Atitus.
 O código desse projeto foi inspirado num sistema bancário feito em COBOL.
